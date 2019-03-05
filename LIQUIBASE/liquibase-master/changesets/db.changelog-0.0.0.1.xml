@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog 
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd"> 
+    <changeSet id="04032019_1" author="ROQUE_A">
+        <createTable tableName="users">
+            <column type="INT" name="id" autoIncrement="true">
+            <constraints unique="false" primaryKey="false" nullable="true"/>
+            </column>
+            <column type="VARCHAR(50)" name="ds_name">
+            <constraints unique="false" primaryKey="false" nullable="true"/>
+            </column>
+            <column type="VARCHAR(50)" name="ds_lastname">
+            <constraints unique="false" primaryKey="false" nullable="true"/>
+            </column>
+            <column type="INT" name="age">
+            <constraints unique="false" primaryKey="false" nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog> 
